@@ -1,0 +1,5 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore all wallet.json files in any folder
+**/*wallet.json
