@@ -48,8 +48,8 @@ pub struct List<'info> {
     seeds =[b"metadata",metadata_program.key().as_ref(),maker_mint.key().as_ref()],
     seeds::program = metadata_program.key(), //specifyin which program it belongs to from metadata program
     bump,
-   // constraint = metadata.collection.as_ref().unwrap().key.as_ref() == collection_mint.key().as_ref(),  //metadats collection same as collection mint
-   //constraint = metadata.collection.as_ref().unwrap().verified == true,  //can create any nft we want but need to be verified some collection to belong to that collection
+    constraint = metadata.collection.as_ref().unwrap().key.as_ref() == collection_mint.key().as_ref(),  //metadats collection same as collection mint
+   constraint = metadata.collection.as_ref().unwrap().verified == true,  //can create any nft we want but need to be verified some collection to belong to that collection
   )]
     pub metadata: Account<'info, MetadataAccount>,
  
