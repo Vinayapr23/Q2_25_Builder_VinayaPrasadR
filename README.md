@@ -1,3 +1,15 @@
+# 🚀 Turbin3 Cohort Portfolio – Vinaya Prasad R
+
+Welcome to my Turbin3 Cohort Portfolio! This repository is a curated showcase of my hands-on journey into Solana blockchain development using the Anchor framework. From foundational tasks to complex smart contract engineering, this space reflects my continuous growth, experimentation, and commitment to mastering Web3 technologies.
+
+---
+
+## 📂 Repository Structure
+
+Each folder in this repository represents a significant milestone, a working project, or a learning module from the Turbin3 program. It tracks not just completed assignments, but the evolution of ideas and solutions across various Solana use cases.
+
+---
+
 ## 🧱 Modules Overview
 
 ### [🛠️ Prerequisites](./airdrop)
@@ -21,5 +33,5 @@ Built a staking system for NFTs, allowing users to lock assets and earn on-chain
 ### [💧 Automated Market Maker (AMM)](./anchor-amm)
 Developed a basic AMM from scratch—enabling users to swap SPL tokens, add liquidity, and simulate trading pools without a central authority.
 
-### [🧾 Pivox Protocol (Capstone)](./PIVOX)
+### [🧾 Pivox Protocol (Capstone)](https://github.com/Vinayapr23/PIVOX)
 My final capstone project: **Pivox** — a milestone-based freelance payment protocol built with Anchor. It leverages vaults, multi-stage approvals, and contract metadata to create a trustless payment platform for freelancers and clients.
