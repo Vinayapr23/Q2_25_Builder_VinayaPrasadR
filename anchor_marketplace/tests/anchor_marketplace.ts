@@ -189,7 +189,7 @@ describe("marketplace", () => {
   });
 
   it("Purchase NFT", async () => {
-    // For simplicity use the same PDA addresses from listing test.
+   
     const [listingPda, _] = anchor.web3.PublicKey.findProgramAddressSync(
       [marketPdaAccount.toBuffer(),new anchor.web3.PublicKey(nftMint.publicKey).toBuffer()],
       program.programId
@@ -223,7 +223,7 @@ describe("marketplace", () => {
   let secondNftMint;
 
   it("Mint and List a second NFT for delist test", async () => {
-    // Generate a new mint for our second NFT
+    // Generate a new mint for  second NFT
      secondNftMint = generateSigner(umi);
     
     console.log("Minting second NFT...");
@@ -300,7 +300,6 @@ describe("marketplace", () => {
       .rpc();
     console.log("Second NFT listed with tx:", tx);
     
-    // Save the second NFT mint for later tests
     global.secondNftMint = secondNftMint;
   });
 
@@ -308,22 +307,8 @@ describe("marketplace", () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   it("Delist NFT", async () => {
-    // Use the same PDA addresses computed earlier.
-
-  
+   
 
     const [listingPda, _] = anchor.web3.PublicKey.findProgramAddressSync(
       [marketPdaAccount.toBuffer(), new anchor.web3.PublicKey(secondNftMint.publicKey).toBuffer()],
@@ -331,7 +316,7 @@ describe("marketplace", () => {
     );
     console.log("Listing PDA for delistng:", listingPda.toString());
     
-    // Verify the listing account exists
+    // Verify the listing account 
     const listingAccount = await provider.connection.getAccountInfo(listingPda);
     console.log("Listing account exists:", !!listingAccount);
     
