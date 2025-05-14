@@ -33,5 +33,5 @@ Built a staking system for NFTs, allowing users to lock assets and earn on-chain
 ### [💧 Automated Market Maker (AMM)](./anchor-amm)
 Developed a basic AMM from scratch—enabling users to swap SPL tokens, add liquidity, and simulate trading pools without a central authority.
 
-### [🧾 Pivox Protocol (Capstone)](https://github.com/Vinayapr23/PIVOX)
+### [🧾 PIVOX(Capstone)](https://github.com/Vinayapr23/PIVOX)
 My final capstone project: **Pivox** — a milestone-based freelance payment protocol built with Anchor. It leverages vaults, multi-stage approvals, and contract metadata to create a trustless payment platform for freelancers and clients.
